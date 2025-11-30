@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun R G - Full Stack Developer Portfolio</title>
+    <!-- <link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+      integrity="sha512-pQvP6CjCEpGkCqsn9N...etc" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <meta name="description" content="Full Stack Developer passionate about creating innovative digital solutions. Specializing in React, Node.js, Python, and modern web technologies.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+       
+</head>
+<body>
+    <!-- Live Background -->
+    <div class="live-bg" id="liveBg"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="text-gradient">Arun</span> R G
+            </div>
+            <div class="nav-menu">
+                <button class="nav-link" onclick="scrollToSection('#home')">Home</button>
+                <button class="nav-link" onclick="scrollToSection('#about')">About</button>
+                <button class="nav-link" onclick="scrollToSection('#projects')">Projects</button>
+                <button class="nav-link" onclick="scrollToSection('#contact')">Contact</button>
+                <button class="btn btn-primary hero-gradient" onclick="scrollToSection('#contact')">Hire Me</button>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <svg class="icon-lg" id="menuIcon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="nav-link" onclick="scrollToSection('#home')">Home</button>
+            <button class="nav-link" onclick="scrollToSection('#about')">About</button>
+            <button class="nav-link" onclick="scrollToSection('#projects')">Projects</button>
+            <button class="nav-link" onclick="scrollToSection('#contact')">Contact</button>
+            <button class="btn btn-primary hero-gradient" onclick="scrollToSection('#contact')">Hire Me</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-bg-element hero-gradient"></div>
+            <div class="hero-bg-element hero-gradient"></div>
+            <div class="hero-bg-element hero-gradient"></div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="text-gradient">Arun R G</span>
+                </h1>
+                <h2 class="hero-subtitle">Full Stack Developer & Data Analytics</h2>
+                <p class="hero-description">
+                    Passionate IT student with hands-on experience in frontend development and UI engineering.
+                     Dedicated to learning, building, and delivering high-quality digital experiences.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary hero-gradient" onclick="scrollToSection('#contact')">
+                        <svg class="icon" style="display: inline; margin-right: 0.5rem;" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Get In Touch
+                    </button>
+                    <a href="Arunresume.pdf" target="_blank" download class="btn btn-outline" style="text-decoration: none;">
+    <svg class="icon" style="display: inline; margin-right: 0.5rem;" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+    </svg>
+    Download CV
+</a>
+
+                </div>
+
+                <div class="hero-social">
+                    <a href="https://github.com/ARUNRG3005" target="_blank" class="social-btn text-gray-300 hover:text-white">
+    <i class="fab fa-github text-5xl" style="font-size: 30px "></i>
+</a>
+
+                   <a href="https://www.linkedin.com/in/arun-r-g-487537312/"  target="_blank"  class="social-btn text-gray-300 hover:text-white">
+    <i class="fab fa-linkedin text-xl" style="font-size: 30px" "color: black" ;></i>
+</a>
+
+                </div>
+            </div>
+
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper slide-in-right">
+                    <div class="hero-image-glow"></div>
+                    <img src="IMG-20251021-WA0005.jpg" alt="Arun R G - Professional Profile" class="hero-image">
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <svg class="icon-lg" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" style="color: var(--muted-foreground);">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">
+                    About <span class="text-gradient">Me</span>
+                </h2>
+                <p class="section-description">
+                    A passionate developer with a love for creating exceptional digital experiences
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text slide-in-left">
+                    <p>
+                        I am an IT student and full-stack developer focused on creating clean, intuitive, and scalable web applications.
+                         With a strong foundation in React, JavaScript, Node.js, Python, and modern UI engineering, I enjoy transforming ideas into polished digital experiences. 
+                         My interest in technology is driven by curiosity, hands-on learning, and a passion for building solutions that feel smooth, fast, and user-friendly.
+                    </p>
+                    <p>
+                        I’ve developed several meaningful projects that shaped my technical skills. My E-Commerce Platform showcases secure authentication, payment integration, and an admin dashboard. The Task Management App highlights real-time collaboration using React and Socket.io. 
+                        I also built an Analytics Dashboard powered by Python and FastAPI for data visualization, and a Mobile Banking App focusing on secure workflows and responsive UI. 
+                        Each project strengthened my problem-solving ability and understanding of full-stack architecture.
+                    </p>
+                    <p>
+                        I’m actively exploring opportunities to contribute to innovative projects, learn from experienced teams, and grow as a developer. 
+                        I’m always open to connecting, collaborating, and taking on challenges that push my skills forward.
+                    </p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card fade-in" style="transition-delay: 0.1s">
+                        <svg class="stat-icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <div class="stat-value text-gradient">10+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card fade-in" style="transition-delay: 0.2s">
+                        <svg class="stat-icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <div class="stat-value text-gradient">2+</div>
+                        <div class="stat-label">Experience</div>
+                    </div>
+                    <div class="stat-card fade-in" style="transition-delay: 0.3s">
+                        <svg class="stat-icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                            <path d="M4 22h16"></path>
+                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                        </svg>
+                        <div class="stat-value text-gradient">8.432</div>
+                        <div class="stat-label">CGPA</div>
+                    </div>
+                    <div class="stat-card fade-in" style="transition-delay: 0.4s">
+                        <svg class="stat-icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="m16 10-4 4-4-4"></path>
+                        </svg>
+                        <div class="stat-value text-gradient">13+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-card scale-in">
+                <h3 class="skills-title">
+                    Technical <span class="text-gradient">Skills</span>
+                </h3>
+                <div class="skills-container">
+                    <span class="skill-badge"><span>JavaScript</span></span>
+                    <span class="skill-badge"><span>TypeScript</span></span>
+                    <span class="skill-badge"><span>React</span></span>
+                    <span class="skill-badge"><span>Node.js</span></span>
+                    <span class="skill-badge"><span>Python</span></span>
+                    <span class="skill-badge"><span>Java</span></span>
+                    <span class="skill-badge"><span>PostgreSQL</span></span>
+                    <span class="skill-badge"><span>MongoDB</span></span>
+                    <span class="skill-badge"><span>MangoDB</span></span>
+                    <span class="skill-badge"><span>C / C#</span></span>
+                    <span class="skill-badge"><span>HTML / CSS</span></span>
+                    <span class="skill-badge"><span>C++</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title" style="color: black;">
+                    Top <span class="text-gradient" ; style="color: aliceblue;">Projects</span>
+                </h2>
+                <p class="section-description">
+                    A showcase of my recent work and technical expertise
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card fade-in" style="transition-delay: 0.1s">
+                    <div class="project-image-wrapper">
+                        <img src="C:\Users\mr\OneDrive\Desktop\Arun project\profile\schemelink.jpg" alt="E-Commerce Platform" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Scheme-Link</h3>
+                        <p class="project-description">
+                            A full-stack e-commerce solution with payment integration, user authentication, and admin dashboard. Built with modern technologies for optimal performance.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+    <a href="https://github.com/ARUNRG3005/Schemelink" target="_blank" class="btn btn-outline btn-sm" style="text-decoration: none;">
+        <svg class="icon" style="display: inline; margin-right: 0.25rem;" 
+             stroke="currentColor" fill="none" stroke-width="2" 
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61
+                     c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77
+                     5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48
+                     a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1
+                     5.09 1A5.07 5.07 0 0 0 5 4.77
+                     a5.44 5.44 0 0 0-1.5 3.78
+                     c0 5.42 3.3 6.61 6.44 7
+                     A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+        </svg>
+        Code
+    </a>
+
+    <a href="https://arunrg3005.github.io/Schemelink/" target="_blank" class="btn btn-primary btn-sm hero-gradient" style="text-decoration: none;">
+        <svg class="icon" style="display: inline; margin-right: 0.25rem;" 
+             stroke="currentColor" fill="none" stroke-width="2" 
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8
+                     a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+        Live Demo
+    </a>
+</div>
+
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card fade-in" style="transition-delay: 0.2s">
+                    <div class="project-image-wrapper">
+                        <img src="C:\Users\mr\OneDrive\Desktop\Arun project\profile\focusmate.jpg" alt="Task Management App" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Focusmate</h3>
+                        <p class="project-description">
+                            A collaborative project management tool with real-time updates, team collaboration features, and intuitive drag-and-drop interface.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">node.js</span>
+                            <span class="tech-badge">Cloud</span>
+                        </div>
+                        <div class="project-buttons">
+    <a href="https://github.com/ARUNRG3005/spark-study-planner" target="_blank" class="btn btn-outline btn-sm" style="text-decoration: none;">
+        <svg class="icon" style="display: inline; margin-right: 0.25rem;" 
+             stroke="currentColor" fill="none" stroke-width="2" 
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61
+                     c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77
+                     5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48
+                     a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1
+                     5.09 1A5.07 5.07 0 0 0 5 4.77
+                     a5.44 5.44 0 0 0-1.5 3.78
+                     c0 5.42 3.3 6.61 6.44 7
+                     A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+        </svg>
+        Code
+    </a>
+
+    <a href="https://spark-study-planner.vercel.app/" target="_blank" class="btn btn-primary btn-sm hero-gradient" style="text-decoration: none;">
+        <svg class="icon" style="display: inline; margin-right: 0.25rem;" 
+             stroke="currentColor" fill="none" stroke-width="2" 
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8
+                     a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+        Live Demo
+    </a>
+</div>
+
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card fade-in" style="transition-delay: 0.3s">
+                    <div class="project-image-wrapper">
+                        <img src="C:\Users\mr\OneDrive\Desktop\Arun project\profile\KLN.jpg" alt="Analytics Dashboard" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">KLN EVENT REGISTER</h3>
+                        <p class="project-description">
+                            A comprehensive data visualization dashboard with real-time metrics, custom reports, and interactive charts for business intelligence.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">Tailwind-CSS</span>
+                            <span class="tech-badge">AppScript</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                        </div>
+                        <div class="project-buttons">
+    <a href="https://github.com/ARUNRG3005/KLN-EVENT-REGISTER" target="_blank" class="btn btn-outline btn-sm" style="text-decoration: none;">
+        <svg class="icon" style="display: inline; margin-right: 0.25rem;" 
+             stroke="currentColor" fill="none" stroke-width="2" 
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61
+                     c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77
+                     5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48
+                     a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1
+                     5.09 1A5.07 5.07 0 0 0 5 4.77
+                     a5.44 5.44 0 0 0-1.5 3.78
+                     c0 5.42 3.3 6.61 6.44 7
+                     A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+        </svg>
+        Code
+    </a>
+
+    <a href="https://arunrg3005.github.io/KLN-EVENT-REGISTER/" target="_blank" class="btn btn-primary btn-sm hero-gradient" style="text-decoration: none;">
+        <svg class="icon" style="display: inline; margin-right: 0.25rem;" 
+             stroke="currentColor" fill="none" stroke-width="2" 
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8
+                     a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+        Live Demo
+    </a>
+</div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card fade-in" style="transition-delay: 0.4s">
+                    <div class="project-image-wrapper">
+                        <img src="C:\Users\mr\OneDrive\Desktop\Arun project\profile\IT COMPANY.jpg" alt="Mobile Banking App" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Codsoft Technologies</h3>
+                        <p class="project-description">
+                            A secure mobile banking application with biometric authentication, transaction history, and budget tracking features.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">UI and UX</span>
+                            <span class="tech-badge">Figma</span>
+                            <span class="tech-badge">Photoshop</span>
+                            <span class="tech-badge">Canva</span>
+                        </div>
+                        <div class="project-buttons">
+    <a href="https://github.com/ARUNRG3005/codsoft" target="_blank" class="btn btn-outline btn-sm" style="text-decoration: none;">
+        <svg class="icon" style="display: inline; margin-right: 0.25rem;" 
+             stroke="currentColor" fill="none" stroke-width="2" 
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61
+                     c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77
+                     5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48
+                     a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1
+                     5.09 1A5.07 5.07 0 0 0 5 4.77
+                     a5.44 5.44 0 0 0-1.5 3.78
+                     c0 5.42 3.3 6.61 6.44 7
+                     A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+        </svg>
+        Code
+    </a>
+
+    <a href="https://github.com/ARUNRG3005/codsoft/blob/main/Untitled-min.png" target="_blank" class="btn btn-primary btn-sm hero-gradient" style="text-decoration: none;">
+        <svg class="icon" style="display: inline; margin-right: 0.25rem;" 
+             stroke="currentColor" fill="none" stroke-width="2" 
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8
+                     a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+        Live Demo
+    </a>
+</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem; ">
+                <button class="btn btn-outline scale-in" style="padding: 0.75rem 2rem;" >
+                    <a href="https://github.com/ARUNRG3005" style="text-decoration: none; color: rgb(129, 129, 242);">View All Projects </a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">
+                    Let's <span class="text-gradient">Connect</span>
+                </h2>
+                <p class="section-description">
+                    Ready to bring your ideas to life? Let's discuss your next project
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info slide-in-left">
+                    <h3>Get in Touch</h3>
+                    <p>
+                        I'm always open to discussing new opportunities, creative ideas, or 
+                        potential collaborations. Feel free to reach out through any of the 
+                        channels below.
+                    </p>
+
+                    <div class="contact-cards">
+                        <div class="contact-card fade-in" style="transition-delay: 0.1s">
+                            <a href="mailto:rgarun111@gmail.com">
+                                <div class="contact-icon hero-gradient">
+                                    <svg class="icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">Email</div>
+                                    <div class="contact-value">rgarun111@gmail.com</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="contact-card fade-in" style="transition-delay: 0.2s">
+                            <a href="tel:+919876543210">
+                                <div class="contact-icon hero-gradient">
+                                    <svg class="icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">Phone</div>
+                                    <div class="contact-value">+91 7604847895</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="contact-card fade-in" style="transition-delay: 0.3s">
+                            <a href="#">
+                                <div class="contact-icon hero-gradient">
+                                    <svg class="icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">Location</div>
+                                    <div class="contact-value">TamilNadu, India</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card slide-in-right">
+                    <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1.5rem;">Send a Message</h3>
+                    <!-- Contact form (replace existing form block) -->
+<form id="contactForm">
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+    <div>
+      <label for="firstName">First Name</label>
+      <input id="firstName" name="firstName" required style="width:100%; padding:.6rem; margin-top:.4rem; border-radius:8px;" />
+    </div>
+    <div>
+      <label for="lastName">Last Name</label>
+      <input id="lastName" name="lastName" required style="width:100%; padding:.6rem; margin-top:.4rem; border-radius:8px;" />
+    </div>
+  </div>
+
+  <div style="margin-top:1rem;">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required style="width:100%; padding:.6rem; margin-top:.4rem; border-radius:8px;" />
+  </div>
+
+  <div style="margin-top:1rem;">
+    <label for="subject">Subject</label>
+    <input id="subject" name="subject" required style="width:100%; padding:.6rem; margin-top:.4rem; border-radius:8px;" />
+  </div>
+
+  <div style="margin-top:1rem;">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required style="width:100%; padding:.6rem; margin-top:.4rem; border-radius:8px;"></textarea>
+  </div>
+
+  <div style="margin-top:1rem;">
+    <button type="submit" class="btn btn-primary hero-gradient" style="width:100%;">Send Message</button>
+  </div>
+</form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="fade-in">
+                    <div class="footer-brand">
+                        <span class="text-gradient">Arun</span> R G
+                    </div>
+                    <p class="footer-description">
+                        Full Stack Developer passionate about creating innovative digital solutions 
+                        that make a difference in people's lives.
+                    </p>
+                </div>
+
+                <div class="fade-in" style="transition-delay: 0.1s">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <div class="footer-links">
+                        <button class="footer-link" onclick="scrollToSection('#about')">About Me</button>
+                        <button class="footer-link" onclick="scrollToSection('#projects')">Projects</button>
+                        <button class="footer-link" onclick="scrollToSection('#contact')">Contact</button>
+                    </div>
+                </div>
+
+                <div class="fade-in" style="transition-delay: 0.2s">
+                    <h3 class="footer-title">Get In Touch</h3>
+                    <div style="color: var(--muted-foreground);">
+                        <p>rgarun111@gmail.com</p>
+                        <p>+91 7604847895</p>
+                        <p>TamilNadu, India</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://github.com/ARUNRG3005" target="_blank" class="social-btn text-gray-300 hover:text-white">
+    <i class="fab fa-github text-5xl" style="font-size: 30px; color: rgb(49, 155, 65); "></i>
+</a>
+
+                        <a href="https://www.linkedin.com/in/arun-r-g-487537312/"  target="_blank"  class="social-btn text-gray-300 hover:text-white">
+    <i class="fab fa-linkedin text-xl" style="font-size: 30px" "color: black" ;></i>
+</a>
+                        <a href="mailto:rgarun111@gmail.com" target="_blank" class="social-btn text-gray-300 hover:text-white">
+    <i class="fas fa-envelope" style="font-size: 30px; color: rgb(196, 201, 141);"></i>
+</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright fade-in">
+                    <span>© <span id="year"></span> Arun R G. Made with</span>
+                    <svg class="icon heart-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    
+                </div>
+                <button class="btn fade-in" style="background: none; border: none; color: var(--muted-foreground);" onclick="scrollToTop()">
+                    Back to Top ↑
+                </button>
+            </div>
+        </div>
+    </footer>
+     
+    
+</body>
+</html>
