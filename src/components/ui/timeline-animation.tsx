@@ -30,7 +30,7 @@ export function TimelineContent({
 
   // Dynamically pick the correct motion element
   const MotionComponent = typeof Component === "string"
-    ? (motion as Record<string, typeof motion.div>)[Component] || motion.div
+    ? (motion as unknown as Record<string, typeof motion.div>)[Component] || motion.div
     : motion.create(Component);
 
   return (
